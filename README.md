@@ -37,7 +37,7 @@ losses = model.compute_losses(real_image, output_image, style)
 
 # Print losses
 print(losses)
-
+```
 #Classes
 
 ##CFSM

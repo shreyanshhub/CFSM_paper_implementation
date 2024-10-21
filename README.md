@@ -38,25 +38,25 @@ losses = model.compute_losses(real_image, output_image, style)
 # Print losses
 print(losses)
 ```
-#Classes
+# Classes
 
-##CFSM
+## CFSM
 
-##Parameters:
+## Parameters:
  -img_size (int): Size of the input images (default: 112).
  -style_dim (int): Dimension of the style representation (default: 128).
  -n_bases (int): Number of bases for the linear subspace (default: 10).
  -l_a, u_a (float): Lower and upper bounds for the style norms (default: 0, 6).
  -l_m, u_m (float): Lower and upper margins for the identity loss (default: 0.05, 0.65).
 
-###ImageEncoder
+### ImageEncoder
  - Purpose: Encodes input images to extract content features.
-###StyleDecoder
+### StyleDecoder
  - Purpose: Decodes the content features and applies styles to generate output images.
-###Discriminator
+### Discriminator
  - Purpose: Discriminates between real and generated images to train the generator.
-###LinearSubspace
+### LinearSubspace
  - Purpose: Samples styles from a learned linear subspace to guide the style generation.
-###MLP (Multi-Layer Perceptron)
+### MLP (Multi-Layer Perceptron)
  - Purpose: A basic fully connected network used in the style decoder.
 

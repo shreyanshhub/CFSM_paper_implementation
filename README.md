@@ -1,7 +1,7 @@
 # CFSM (Controllable Face Synthesis Model)
 
 ## Purpose
-This repository gives a basic layout of the CSFM paper.
+This repository gives a basic layout of the CFSM paper.
 
 ## Overview
 The CFSM (Controllable Face Synthesis Model) is a neural network architecture designed for image style transfer. It integrates content encoding, style decoding, and adversarial training through a discriminator to achieve high-quality image generation with diverse styles.

@@ -1,0 +1,14 @@
+graph TD
+    subgraph Style Space Manifold
+        A[Input Space] -->|Encoder E| B[Content Space]
+        C[Style Code z] -->|Linear Subspace| D[Style Manifold]
+        B --> E[Generator G]
+        D --> E
+        E -->|Synthesis| F[Output Space]
+    end
+    
+    subgraph Optimization Flow
+        G[Discriminator Loss] --> H[Generator Update]
+        I[Identity Loss] --> H
+        J[Orthogonality Loss] --> H
+    end
